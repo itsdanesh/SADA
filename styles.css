@@ -1,0 +1,135 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 1.5em;
+    opacity: 0.9;
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a237e;
+    font-size: 2.5em;
+}
+
+/* Skills section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 2.5em;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+    color: #1a237e;
+}
+
+/* Contact section */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: #1a237e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background: #0d47a1;
+}
+
+/* Footer */
+footer {
+    background: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.2em;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+} 
